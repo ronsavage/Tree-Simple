@@ -2,6 +2,7 @@ Changelog.ini
 Changes
 lib/Tree/Simple.pm
 lib/Tree/Simple/Visitor.pm
+LICENSE
 Makefile.PL
 MANIFEST
 MANIFEST.SKIP
