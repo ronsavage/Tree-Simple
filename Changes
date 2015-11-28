@@ -5,9 +5,11 @@ Revision history for Perl extension Tree::Simple.
 	- Accept patches from Manwar via github. See https://github.com/stevan/tree-simple/pull/10.
 	- I (Ron) followed github's advice on handling merge conflicts from the command line, but could
 		not see the patches after the merge.
+	- Remove Build.PL.
+	- Reformat dates in this file.
 	- Oops. Can't get Test::Stream to work in 10_Tree_Simple_test.t. Logged issue, but it's
 		probably a problem with the way I tried to use Test::Stream. Revert to Test::More.
-	- Fix reference to github repo in Makefile.PL. Part was missing.
+	- Fix reference to github repo in Makefile.PL. Part of the text was missing.
 	- Add xt/author/changes.t to MANIFEST.
 
 1.25  2014-01-13T08:51:00
