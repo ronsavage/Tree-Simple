@@ -1192,10 +1192,9 @@ specialized in purpose.
 =item L<Tree::DAG_Node>
 
 This module seems pretty stable and very robust with a lot of functionality.
-However, B<Tree::DAG_Node> does not come with any automated tests.
-I<test.pl> file simply checks the module loads and nothing else. While I
-am sure the author tested his code, I would feel better if I was able to
-see that. The module is approx. 3000 lines with POD, and 1,500 without the
+But it> only comes with 1 sophisticated test, t/cut.and.paste.subtrees.t.
+While I am sure the author tested his code, I would feel better if I was able
+to see that. The module is approx. 3000 lines with POD, and 1,500 without the
 POD. The shear depth and detail of the documentation and the ratio of code
 to documentation is impressive, and not to be taken lightly. But given that
 it is a well known fact that the likeliness of bugs increases along side the
