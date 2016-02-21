@@ -602,11 +602,11 @@ Tree::Simple - A simple tree object
   # make a tree root
   my $tree = Tree::Simple->new("0", Tree::Simple->ROOT);
 
-  # explicity add a child to it
+  # explicitly add a child to it
   $tree->addChild(Tree::Simple->new("1"));
 
   # specify the parent when creating
-  # an instance and it adds the child implicity
+  # an instance and it adds the child implicitly
   my $sub_tree = Tree::Simple->new("2", $tree);
 
   # chain method calls
