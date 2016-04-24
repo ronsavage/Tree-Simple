@@ -1,5 +1,12 @@
 Revision history for Perl extension Tree::Simple.
 
+1.27  2016-04-25T09:26:00
+	- No code changes.
+	- Fix licence mess so all references are to Perl. This involves edits to Makefile.PL and
+		LICENSE. See RT#113949. Thanx Kent Fredric.
+	- Fix Makefile.PL so modules only used for testing are in TEST_REQUIRES and not PREREQ_PM.
+		See RT#113948. Thanx Kent Fredric.
+
 1.26  2015-11-28T09:30:00
 	- No code changes.
 	- Accept patches from Manwar via github. See https://github.com/stevan/tree-simple/pull/10.

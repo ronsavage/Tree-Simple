@@ -27,19 +27,22 @@ my(%params) =
 	PL_FILES  => {},
 	PREREQ_PM =>
 	{
-		'constant' => 0,
-		'Scalar::Util' => '1.18',
-		'strict' => 0,
-		'Test::Exception' => '0.15',
-		'Test::More' => 1.001014,
-		'warnings' => 0,
+		'constant'		=> 0,
+		'Scalar::Util'	=> '1.18',
+		'strict'		=> 0,
+		'warnings'		=> 0,
+	},
+	TEST_REQUIRES =>
+	{
+		'Test::Exception'	=> '0.15',
+		'Test::More'		=> 1.001014,
 	},
 	VERSION_FROM => 'lib/Tree/Simple.pm',
 );
 
 if ( ($ExtUtils::MakeMaker::VERSION =~ /^\d\.\d\d$/) && ($ExtUtils::MakeMaker::VERSION > 6.30) )
 {
-	$params{LICENSE} = 'artistic_2';
+	$params{LICENSE} = 'perl';
 }
 
 if ($ExtUtils::MakeMaker::VERSION ge '6.46')
