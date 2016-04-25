@@ -6,7 +6,7 @@ Revision history for Perl extension Tree::Simple.
 		and LICENSE. See RT#113949. Thanx Kent Fredric.
 	- Fix Makefile.PL so modules only used for testing are in TEST_REQUIRES and not PREREQ_PM.
 		See RT#113948. Thanx Kent Fredric.
-	- Fix Changes so it more-or-less conforms to the Perl Foundation's guidelines at
+	- Fix README so it more-or-less conforms to the Perl Foundation's guidelines at
 		http://www.perlfoundation.org/cpan_licensing_guidelines.
 
 1.26  2015-11-28T09:30:00
