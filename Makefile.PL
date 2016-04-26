@@ -55,7 +55,10 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 		},
 		resources =>
 		{
-			bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Tree-Simple',
+			bugtracker =>
+			{
+				web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Tree-Simple',
+			},
 			license    => 'http://dev.perl.org/licenses/',
 			repository =>
 			{
