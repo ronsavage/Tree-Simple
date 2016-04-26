@@ -49,9 +49,16 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 {
 	$params{META_MERGE} =
 	{
+		'meta-spec' =>
+		{
+			version => 2,
+		},
 		resources =>
 		{
-			bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Tree-Simple',
+			bugtracker =>
+			{
+				web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Tree-Simple',
+			},
 			license    => 'http://dev.perl.org/licenses/',
 			repository =>
 			{
