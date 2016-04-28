@@ -1,5 +1,10 @@
 Revision history for Perl extension Tree::Simple.
 
+1.28  2016-04-27T17:35:00
+	- No code changes.
+	- Adopt workflow techniques suggested by Kent Fredric. This means a cleaner workdir and a
+		much more reliable dist. The latter now has auto-generated MANIFEST and META.* files.
+
 1.27  2016-04-25T09:26:00
 	- No code changes.
 	- Fix my licence (sic) mess so all references are to Perl. This involves edits to Makefile.PL
