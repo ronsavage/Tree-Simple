@@ -1,5 +1,9 @@
 Revision history for Perl extension Tree::Simple.
 
+1.29  2016-05-04T08;15:00
+	- Correct physical address of Free Software Foundation in LICENSE file. See RT#114149.
+		Thanx to Petr Pisar.
+
 1.28  2016-04-27T17:35:00
 	- No code changes.
 	- Adopt workflow techniques suggested by Kent Fredric. This means a cleaner workdir and a
