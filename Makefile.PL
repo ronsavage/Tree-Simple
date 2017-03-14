@@ -35,7 +35,7 @@ my(%params) =
 	TEST_REQUIRES =>
 	{
 		'Test::Exception'	=> '0.15',
-		'Test::More'		=> 1.001014,
+		'Test::More'		=> 1.001002,
 	},
 	VERSION_FROM => 'lib/Tree/Simple.pm',
 );
