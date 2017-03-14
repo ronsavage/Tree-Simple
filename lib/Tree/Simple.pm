@@ -3,7 +3,7 @@ package Tree::Simple;
 use strict;
 use warnings;
 
-our $VERSION = '1.29';
+our $VERSION = '1.30';
 
 use Scalar::Util qw(blessed);
 
@@ -134,6 +134,11 @@ sub addChild {
 sub addChildren {
     splice @_, 1, 0, $_[0]->getChildCount;
     goto &insertChildren;
+}
+
+sub generateChild
+{
+	return $_[0]->addChild($_[0]->new($_[1]) );
 }
 
 sub _insertChildAt {
@@ -627,6 +632,23 @@ Tree::Simple - A simple tree object
   # clean up circular references
   $tree->DESTROY();
 
+Alternately, to avoid calling Tree::Simple->new(...) just to add a node:
+
+	use Tree::Simple;
+	use Data::TreeDumper; # Provides DumpTree().
+
+	# ---------------
+
+	my($root) = Tree::Simple->new('Root', Tree::Simple->ROOT);
+
+	$root->generateChild('Child 1.0');
+	$root->generateChild('Child 2.0');
+	$root->getChild(0)->generateChild('Grandchild 1.1');
+
+	print DumpTree($root);
+
+	$root->DESTROY;
+
 =head1 DESCRIPTION
 
 This module in an fully object-oriented implementation of a simple n-ary
@@ -726,6 +748,11 @@ Or the more complex:
                                      Tree::Simple->new("1.0.1")
                                      )
                          );
+
+=item B<generateChild ($scalar)>
+
+This method accepts a scalar and calls addChild(Tree::Simple->new($scalar) ) purely to
+save you the effort of needing to use C<< Tree::Simple->new(...) >> as the parameter.
 
 =item B<addChildren (@trees)>
 

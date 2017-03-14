@@ -1,5 +1,10 @@
 Revision history for Perl extension Tree::Simple.
 
+1.30  2017-03-15T09:45:00
+	- Add convenience method generateChild($scalar) which simply does addChild(new($scalar) ).
+		Thanx to René Nyffenegger for this suggestion.
+		Add matching test t/22_Tree_Simple_generate_child.t.
+
 1.29  2016-05-04T08;15:00
 	- Correct physical address of Free Software Foundation in LICENSE file. See RT#114149.
 		Thanx to Petr Pisar.
