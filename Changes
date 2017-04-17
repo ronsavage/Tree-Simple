@@ -1,5 +1,14 @@
 Revision history for Perl extension Tree::Simple.
 
+1.31  2017-04-17T09:11:00
+	- Add 3 new methods: getSiblingCount(), isFirstChild() and isLastChild().
+		Warning: getSiblingCount() does not include the invocant, unlike getAllSiblings().
+	- Add t/24_Tree_Simple_sibling_test.t.
+	- These methods are used by Tree::Simple::View::HTML V 0.19 to output HTML compatible with the
+		HTML5 standard for nested lists. See https://www.w3.org/wiki/HTML_lists#Nesting_lists.
+		Thanx to Ekkehard Plicht for suggesting this, and for the patches, which I have reworked.
+		See RT#121099.
+
 1.30  2017-03-15T09:45:00
 	- Add convenience method generateChild($scalar) which simply does addChild(new($scalar) ).
 		Thanx to Rene Nyffenegger for this suggestion.
