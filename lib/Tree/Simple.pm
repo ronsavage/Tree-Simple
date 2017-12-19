@@ -3,7 +3,7 @@ package Tree::Simple;
 use strict;
 use warnings;
 
-our $VERSION = '1.31';
+our $VERSION = '1.32';
 
 use Scalar::Util qw(blessed);
 
@@ -470,13 +470,13 @@ sub traverse {
         if defined($post);
     foreach my $child ($self->getAllChildren()) {
         my $ret = $func->($child);
-        
+
         # Propagate up the stack.
         return $ret if 'ABORT' eq $ret;
-        
+
         $ret = $child->traverse($func, $post);
         return $ret if 'ABORT' eq $ret;
-        
+
         defined($post) && $post->($child);
     }
 }
@@ -1000,7 +1000,7 @@ hierarchy in an XML-style format.
   });
 
 Note that aborting traverse is not recommended when using C<$postfunc>
-because post-function will not becalled for any nodes after aborting
+because post-function will not be called for any nodes after aborting
 which might lead to less than predictable results.
 
 =item B<size>
