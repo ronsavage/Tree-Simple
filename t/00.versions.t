@@ -5,18 +5,13 @@ use warnings;
 
 # I tried 'require'-ing modules but that did not work.
 
-use SVG::Grid; # For the version #.
+use Tree::Simple; # For the version #.
 
 use Test::More;
 
-use File::Slurper;
-use Getopt::Long;
-use Moo;
-use Pod::Usage;
+use constant;
+use Scalar::Util;
 use strict;
-use SVG;
-use Types::Standard;
-use utf8;
 use warnings;
 
 # ----------------------
@@ -25,18 +20,13 @@ pass('All external modules loaded');
 
 my(@modules) = qw
 /
-	File::Slurper
-	Getopt::Long
-	Moo
-	Pod::Usage
+	constant
+	Scalar::Util
 	strict
-	SVG
-	Types::Standard
-	utf8
 	warnings
 /;
 
-diag "Testing SVG::Grid V $SVG::Grid::VERSION";
+diag "Testing Tree::Simple V $Tree::Simple::VERSION";
 
 for my $module (@modules)
 {
