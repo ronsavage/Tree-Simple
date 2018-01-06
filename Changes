@@ -4,6 +4,7 @@ Revision history for Perl extension Tree::Simple.
 	- Fix traverse() so it does not assume user functions and traverse() itself return a defined
 		value. This stops undef warnings when the return value is tested for error propagation.
 		Thanx to Jason Tibbitts for reporting this.
+	- Add t/00.versions.* to display the version #s of all pre-reqs.
 
 1.32  2017-12-19T15:20:00
 	- Change traverse() to handle the case of its 1st parameter returning 'ABORT'. This code was
