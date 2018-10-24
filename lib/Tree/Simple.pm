@@ -1282,7 +1282,7 @@ specialized in purpose.
 =item L<Tree::DAG_Node>
 
 This module seems pretty stable and very robust with a lot of functionality.
-But it> only comes with 1 sophisticated test, t/cut.and.paste.subtrees.t.
+But it only comes with 1 sophisticated test, t/cut.and.paste.subtrees.t.
 While I am sure the author tested his code, I would feel better if I was able
 to see that. The module is approx. 3000 lines with POD, and 1,500 without the
 POD. The shear depth and detail of the documentation and the ratio of code
