@@ -3,7 +3,7 @@ package Tree::Simple;
 use strict;
 use warnings;
 
-our $VERSION = '1.33';
+our $VERSION = '1.34';
 
 use Scalar::Util qw(blessed);
 
@@ -1384,6 +1384,16 @@ and I<width> properties without unnecessary recursion.
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/ronsavage/Tree-Simple>.
+
+=head1 SUPPORT
+
+Bugs should be reported via the CPAN bug tracker at
+
+L<https://github.com/ronsavage/Tree-Simple/issues>
+
 =head1 AUTHOR
 
 Stevan Little, E<lt>stevan@iinteractive.comE<gt>
@@ -1391,10 +1401,6 @@ Stevan Little, E<lt>stevan@iinteractive.comE<gt>
 Rob Kinyon, E<lt>rob@iinteractive.comE<gt>
 
 Ron Savage E<lt>ron@savage.net.auE<gt> has taken over maintenance as of V 1.19.
-
-=head1 REPOSITORY
-
-L<https://github.com/ronsavage/Tree-Simple>.
 
 =head1 COPYRIGHT AND LICENSE
 
