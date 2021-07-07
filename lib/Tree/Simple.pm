@@ -1328,10 +1328,8 @@ are similar in functionality they greatly differ in implementation style.
 
 =item L<Tree>
 
-This module is pretty old, it has not been updated since Oct. 31, 1999 and
-is still on version 0.01. It also seems to be (from the limited documentation)
-a binary and a balanced binary tree, B<Tree::Simple> is an I<n>-ary tree, and
-makes no attempt to balance anything.
+The base class implements an I<n>-ary tree. It is derived from
+L<Tree::Simple>, but has a simpler interface and many more features.
 
 =item L<Tree::Ternary>
 
